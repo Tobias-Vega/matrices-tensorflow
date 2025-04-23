@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.18.0/dist/tf.min.js"></script>
+    <title>Suma de matrices con TensorFlow.js</title>
+  </head>
+  <body>
+    <h1>Suma de matrices</h1>
+
+    <form id="form">
+      <div class="matriz-input">
+        <h2>Dimensiones de las matrices</h2>
+        <input type="number" id="m1-f" placeholder="Filas" min="1" required />
+        <input type="number" id="m1-c" placeholder="Columnas" min="1" required />
+      </div>
+
+      <button type="submit">Generar y sumar</button>
+    </form>
+
+    <div class="resultado">
+      <h2>Resultado</h2>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
